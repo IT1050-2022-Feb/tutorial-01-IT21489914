@@ -13,7 +13,24 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
-  
+  int num,sum = 0,count = 1;//Variable declaration
+
+  printf("Enter the number : ");//Enter number
+  scanf("%d", &num);//Reads number
+
+  if(num >= 1)//Checking condition
+  {
+    while(count <= num)//Checking condition
+    {
+      sum = sum + count;//Calculates sum
+      count++;//Increment
+
+    }
+    printf("%d", sum);//Displays sum
+  }
+  else//Checking condition
+    printf("Number < 1");
+
   return 0;
-}
+}//End of the program
 
